@@ -1,6 +1,6 @@
 # priority-order-decision
 
-input
+<b>input</b>
 working tasks (a, b, c, d, e, f, g)
 
 process
