@@ -7,7 +7,7 @@ working tasks (a, b, c, d, e, f, g)
 
 <b>process</b>
 
-program asking which has more priority in your opinion (for example: a or b) for each entry
+program ask for your priority (for example: a or b) for each entry
 
 
 <b>output</b>
