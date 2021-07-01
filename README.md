@@ -19,7 +19,7 @@ prorityorder
 <b> -o OUTUTFILE  Output File</b>
 </pre>
 
-### priorityorder.py Program Tasks
+### priorityorder.py program tasks
 
 ```sh 
 input
