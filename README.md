@@ -34,7 +34,7 @@ order of working tasks with your priority (for example : e, b, c, a, f, g, d)
 
 ### Examples
 <pre>
-<b> n </b>
-<b> n </b>
-<b> n </b>
-<b> n </b>
+<b> ||   |  </b>
+<b> | |  |  </b>
+<b> |  | |    </b>
+<b> |   ||    </b>
