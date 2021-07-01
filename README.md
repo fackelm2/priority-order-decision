@@ -1,10 +1,12 @@
 # priority-order-decision
-
+## Python Program to order your priority list of todos
 
 ### Donwload & Run
-git clone https://github.com/fackelm2/priority-order-decision
+
+'''sh git clone https://github.com/fackelm2/priority-order-decision
 cd priority-order-decision
 prorityorder
+'''
 
 ### Usage Guide
 usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]
