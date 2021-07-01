@@ -19,7 +19,7 @@ prorityorder
 <b> -o OUTUTFILE  Output File</b>
 </pre>
 
-# priorityorder.py Program Tasks
+### priorityorder.py Program Tasks
 
 ```sh 
 input
@@ -32,9 +32,9 @@ program ask for your priority (for example: a or b) for each entry
 order of working tasks with your priority (for example : e, b, c, a, f, g, d)
 ```
 
-### Usage Guide
-<pre><b>              _ _                 </b>
-<b>  ___ ___ ___| |_|___ ___</b><font color="#FFE82C"><b> ___ _ _</b></font>
-<b> | . |   | -_| | |   | -_</b><font color="#FFE82C"><b>| . | | |</b></font><b>     </b><font color="#FFE82C"><b>Python</b></font>
-<b> |___|_|_|___|_|_|_|_|___</b><font color="#FFE82C"><b>|  _|_  |</b></font><b>     </b><font color="#729FCF"><b>Obfustucator</b></font>
-<b>                         </b><font color="#FFE82C"><b>|_| |___|</b></font>
+### Examples
+<pre>
+<b> n </b>
+<b> n </b>
+<b> n </b>
+<b> n </b>
