@@ -3,10 +3,11 @@
 
 ### Donwload & Run
 
-'''sh git clone https://github.com/fackelm2/priority-order-decision
+```sh 
+git clone https://github.com/fackelm2/priority-order-decision
 cd priority-order-decision
 prorityorder
-'''
+```
 
 ### Usage Guide
 usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]
