@@ -1,5 +1,5 @@
 # priority-order-decision
-## Python Program to order your priority list of todos
+## Python Program to order your tasks
 
 ### Donwload & Run
 
@@ -10,16 +10,20 @@ prorityorder
 ```
 
 ### Usage Guide
+
+```sh 
 usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]
 
 optional arguments:
 -h, --help    show this help message and exit
 -i INPUTFILE  Input File
 -o OUTUTFILE  Output File
+```
 
+# Program Tasks
 
-# Ablauf
-## input
+```sh 
+input
 working tasks (a, b, c, d, e, f, g)
 
 ## process
@@ -27,23 +31,15 @@ program ask for your priority (for example: a or b) for each entry
 
 ## output
 order of working tasks with your priority (for example : e, b, c, a, f, g, d)
-
-
-```sh
-git clone https://github.com/spicesouls/onelinepy
-cd onelinepy
-python3 -m pip install -r requirements.txt
-chmod +x oneline.py
-./oneline.py
-chmod +x setup.sh
-./setup.sh
-onelinepy
 ```
 
 ### Usage Guide
+```sh 
 @@ -34,14 +34,26 @@ chmod +x oneline.py
 <b>  --output OUTPUT  Output File.</b>
 </pre>
+```
+
 ### Examples
 ### Example: Creating FUD Meterpreter Python Payload
 1. Generate Python Payload:
@@ -51,6 +47,8 @@ onelinepy
 2. Obfustucate Payload
 `onelinepy -m /one_line/base64 --script payload.txt -i 3 --output obfustucated_payload.txt`
 3. Profit! The Obfustucated Payload works against Windows Defender.
+```
+
 ### More Examples
 ```sh
 ./oneline.py -m /one_line/base64 --script payload.py -i 3
