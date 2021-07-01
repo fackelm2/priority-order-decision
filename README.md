@@ -1,18 +1,30 @@
 # priority-order-decision
 
-<b>input</b>
 
+### Donwload & Run
+git clone https://github.com/fackelm2/priority-order-decision
+cd priority-order-decision
+prorityorder
+
+### Usage Guide
+usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]
+
+optional arguments:
+-h, --help    show this help message and exit
+-i INPUTFILE  Input File
+-o OUTUTFILE  Output File
+
+
+# Ablauf
+## input
 working tasks (a, b, c, d, e, f, g)
 
-
-<b>process</b>
-
+## process
 program ask for your priority (for example: a or b) for each entry
 
-
-<b>output</b>
-
+## output
 order of working tasks with your priority (for example : e, b, c, a, f, g, d)
+
 
 ```sh
 git clone https://github.com/spicesouls/onelinepy
