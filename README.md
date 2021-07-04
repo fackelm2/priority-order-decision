@@ -34,22 +34,36 @@ optional arguments:
 
 </pre>
 
-### priorityorder.py program tasks
-
-```sh 
-input
-working tasks (a, b, c, d, e, f, g)
-
-## process
-program ask for your priority (for example: a or b) for each entry
-
-## output
-order of working tasks with your priority (for example : e, b, c, a, f, g, d)
-```
 
 ### Examples
+find out what you to learn first ..
 <pre>
-<b> ||   |  </b>
-<b> | |  |  </b>
-<b> |  | |    </b>
-<b> |   ||    </b>
+priority-order-decision.py python aws android malware_analysis
+task 1 : malware_analysis
+task 2 : android
+enter more important task 1 or 2: 2
+task 1 : malware_analysis
+task 2 : aws
+enter more important task 1 or 2: 1
+task 1 : malware_analysis
+task 2 : python
+enter more important task 1 or 2: 2
+task 1 : android
+task 2 : aws
+enter more important task 1 or 2: 1
+task 1 : android
+task 2 : python
+enter more important task 1 or 2: 2
+task 1 : aws
+task 2 : python
+enter more important task 1 or 2: 2
+[['python', 3], ['aws', 0], ['android', 2], ['malware_analysis', 1]]
+</pre>
+<pre>
+The result of my choices:
+1. Python
+2. Android
+3. Malware Analysis
+4. AWS
+</pre>
+
