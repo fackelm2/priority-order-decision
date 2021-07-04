@@ -13,7 +13,7 @@ import time
 import argparse
 import logging as log
 
-# set time string to actual time
+# set time string to actual time for debug and verbose time information
 time_str = time.strftime("%Y%m%d-%H%M%S")
 priority_order_decision_version = 'Version 0.1 [2021-07-04]'
 
@@ -78,7 +78,7 @@ def argument_parser():  # command line tool - parse commands
         print("I need at least a list of 2 tasks (-h for help)")
         exit()
 
-    # until now just a package name OR (excluded or) a filename is implemented todo work with both of them ..
+    # until now just a list of tasks OR (excluded or) a filename is implemented
     if args.input_file and args.mytask:
         print("ERROR - Arguments allowed: <apk_name> OR a filename <-i FILE> (excluded OR)")
         exit()
@@ -105,6 +105,7 @@ def get_tasklist_from_file(filename):
         print("Cannot find file: ", filename)
         exit()
 
+
 def prioritize_tasklist(tasklist):
     priotasklist = []
     value = 0
@@ -119,6 +120,7 @@ def prioritize_tasklist(tasklist):
     if verbose:
         print(time_str + ' prioritize_tasklist() len(task): ' + str(len(tasklist)))
 
+    # for each task in the list create a counter
     for task in tasklist:                   # generate tasklist with task and prio of task
         if verbose:
             print(time_str + ' prioritize_tasklist() task: ' + str(task))
@@ -127,6 +129,7 @@ def prioritize_tasklist(tasklist):
         if verbose:
             print(time_str + 'prioritize_tasklist() priotasklist: ' + str(priotasklist))
 
+    # for each task compare with the next task and ask user which task to prefer, add  one point to chosen task
     while l >= 2:
         k = l - 1
         while k >= 1:
@@ -147,6 +150,7 @@ def prioritize_tasklist(tasklist):
         l = l - 1
     return priotasklist
 
+
 def main():
     global debug
     global verbose
@@ -154,17 +158,13 @@ def main():
     arguments = argument_parser()
     debug = arguments.debug
     verbose = arguments.verbose
-    tasksnumber = ''
-
-    if debug:
-        print(tasksnumber)
 
     if debug:
         print(time_str + ' main() argumentparser finished ..')
         print(time_str + ' main() verbose: ' + str(arguments.verbose))
         print(time_str + ' main() debug: ' + str(arguments.debug))
 
-    if arguments.verbose >= 1:
+    if verbose >= 1:
         verbose = True
         if debug:
             print(time_str + ' main() verbose_level = ON')
