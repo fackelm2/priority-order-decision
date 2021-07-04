@@ -15,7 +15,7 @@ import logging as log
 
 # set time string to actual time
 time_str = time.strftime("%Y%m%d-%H%M%S")
-get_app_info_version = 'Version 0.1 [2021-07-04]'
+priority_order_decision_version = 'Version 0.1 [2021-07-04]'
 
 
 def no_nl(s): return str(s).replace("\r", "").replace("\n", "")   # clean strings (delete carriage return)
@@ -40,11 +40,11 @@ def verbose_log():
 def argument_parser():  # command line tool - parse commands
     global debug
     global verbose
-    global get_app_info_version
+    global priority_order_decision_version
 
-    parser = argparse.ArgumentParser(description='Options for command-line tool get_app_info.py')
-    parser.add_argument('mytasks', type=str, nargs='+', default=False,
-                        help='list of tasks space separeted or filename [-i <filename>] with tasks per line')
+    parser = argparse.ArgumentParser(description='Options for command-line tool priority-order-decision.py')
+    parser.add_argument('mytask', type=str, nargs='+', default=False,
+                        help='list of tasks space separeted or filename [-i <filename>] with one task per line')
     parser.add_argument('-i', '--input_file', type=str, default=False,
                         help='set input filename')
     parser.add_argument('-o', '--output_file', type=str, default=False,
@@ -62,7 +62,7 @@ def argument_parser():  # command line tool - parse commands
 
     if args.debug:  # debug output for argument parser
         print(time_str + ' ' + "argument_parser() args: " + str(args))
-        print(time_str + ' ' + "argument_parser() mytasks: " + str(args.mytasks))
+        print(time_str + ' ' + "argument_parser() mytask: " + str(args.mytask))
         print(time_str + ' ' + "argument_parser() input_file: " + str(args.input_file))
         print(time_str + ' ' + "argument_parser() output_file: " + str(args.output_file))
         print(time_str + ' ' + "argument_parser() output_format: " + str(args.output_format))
@@ -71,15 +71,15 @@ def argument_parser():  # command line tool - parse commands
 
     # print Version and exit (--version)
     if args.version:
-        print(get_app_info_version)
+        print(priority_order_decision_version)
         exit()
 
-    if (args.input_file is False) and (args.mytasks is False):
+    if (args.input_file is False) and (args.mytask is False):
         print("I need at least a list of 2 tasks (-h for help)")
         exit()
 
     # until now just a package name OR (excluded or) a filename is implemented todo work with both of them ..
-    if args.input_file and args.mytasks:
+    if args.input_file and args.mytask:
         print("ERROR - Arguments allowed: <apk_name> OR a filename <-i FILE> (excluded OR)")
         exit()
 
@@ -92,15 +92,15 @@ def get_tasklist_from_file(filename):
     # create list of apps from text file (each line a package name)
     try:
         file = open(filename, "r")  # open text file with package names
-        mytasks = []  # list of package names from input file
+        mytask = []  # list of package names from input file
 
         for line in file:
             try:
-                mytasks.append(no_nl(line))  # add task from file to list package names
+                mytask.append(no_nl(line))  # add task from file to list package names
             except ValueError:
                 pass
         file.close()
-        return mytasks
+        return mytask
     except IOError:
         print("Cannot find file: ", filename)
         exit()
@@ -178,9 +178,9 @@ def main():
         if debug:
             print(time_str + ' main() get tasks from shell input')
         if verbose:
-            print(time_str + ' main() read tasks from shell: ' + str(arguments.mytasks))
+            print(time_str + ' main() read tasks from shell: ' + str(arguments.mytask))
 
-    resultlist = prioritize_tasklist(arguments.mytasks)
+    resultlist = prioritize_tasklist(arguments.mytask)
 
     if arguments.output_file:
         if debug:
