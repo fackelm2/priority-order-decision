@@ -36,34 +36,41 @@ optional arguments:
 
 
 ### Examples
-i want to learn python, amazon aws cloud, malware analysis and android stuff - but what i want to do first?
+I want to learn something about Python, Amazon AWS Cloud, Malware Analysis and Android - but with what i should begin?
 <pre>
 priority-order-decision.py python aws android malware_analysis
 task 1 : malware_analysis
 task 2 : android
 enter more important task 1 or 2: 2
+
 task 1 : malware_analysis
 task 2 : aws
 enter more important task 1 or 2: 1
+
 task 1 : malware_analysis
 task 2 : python
 enter more important task 1 or 2: 2
+
 task 1 : android
 task 2 : aws
 enter more important task 1 or 2: 1
+
 task 1 : android
 task 2 : python
 enter more important task 1 or 2: 2
+
 task 1 : aws
 task 2 : python
 enter more important task 1 or 2: 2
+
 [['python', 3], ['aws', 0], ['android', 2], ['malware_analysis', 1]]
+
 </pre>
 <pre>
-The result of my choices:
+The result of my choices is the following order:
 1. Python
 2. Android
 3. Malware Analysis
-4. AWS
+4. Amazon AWS Cloud
 </pre>
 
