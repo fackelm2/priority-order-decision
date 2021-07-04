@@ -11,13 +11,12 @@ prorityorder
 
 ### Usage Guide
 <pre>
-D:\Projekte\priority-order-decision>D:/Projekte/priority-order-decision/priority-order-decision.py -h
-usage: priority-order-decision.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE] [-f {text,csv,html}] [-d] [-v] [--version] mytasks [mytasks ...]
+usage: priority-order-decision.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE] [-f {text,csv,html}] [-d] [-v] [--version] mytask [mytask ...]
 
-Options for command-line tool get_app_info.py
+Options for command-line tool priority-order-decision.py
 
 positional arguments:
-  mytasks               list of tasks space separeted or filename [-i <filename>] with tasks per line
+  mytask                list of tasks space separeted or filename [-i <filename>] with one task per line
 
 optional arguments:
   -h, --help            show this help message and exit
