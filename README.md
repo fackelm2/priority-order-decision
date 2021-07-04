@@ -1,40 +1,76 @@
 # priority-order-decision
-## Python Program to order your tasks
+## command line tool to prioritize tasks (written in Python)
+A simple command line tool to prioritize a number of tasks by asking you which of two tasks you find more important.<br>
+Start with your task list and get the results of your answers ..
 
-### Donwload & Run
+### Download & Run
 
 ```sh 
 git clone https://github.com/fackelm2/priority-order-decision
 cd priority-order-decision
-prorityorder
+priority-order-decision.py
 ```
 
 ### Usage Guide
 <pre>
-<b>usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]</b>
+usage: priority-order-decision.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE] [-f {text,csv,html}] [-d] [-v] [--version] mytask [mytask ...]
 
-<b> optional arguments:</b>
-<b> -h, --help    show this help message and exit</b>
-<b> -i INPUTFILE  Input File</b>
-<b> -o OUTUTFILE  Output File</b>
+Options for command-line tool priority-order-decision.py
+
+positional arguments:
+  mytask                list of tasks space separeted or filename [-i <filename>] with one task per line
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_FILE, --input_file INPUT_FILE
+                        set input filename
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+                        set output filename (default <console>)
+  -f {text,csv,html}, --output_format {text,csv,html}
+                        set output format (default <text>)
+  -d, --debug           set debug mode
+  -v, --verbose         set verbose mode
+  --version             print version
+
 </pre>
 
-### priorityorder.py program tasks
-
-```sh 
-input
-working tasks (a, b, c, d, e, f, g)
-
-## process
-program ask for your priority (for example: a or b) for each entry
-
-## output
-order of working tasks with your priority (for example : e, b, c, a, f, g, d)
-```
 
 ### Examples
+I want to learn something about Python, Amazon AWS Cloud, Malware Analysis and Android - but with what i should begin?
 <pre>
-<b> ||   |  </b>
-<b> | |  |  </b>
-<b> |  | |    </b>
-<b> |   ||    </b>
+priority-order-decision.py python aws android malware_analysis
+task 1 : malware_analysis
+task 2 : android
+enter more important task 1 or 2: 2
+
+task 1 : malware_analysis
+task 2 : aws
+enter more important task 1 or 2: 1
+
+task 1 : malware_analysis
+task 2 : python
+enter more important task 1 or 2: 2
+
+task 1 : android
+task 2 : aws
+enter more important task 1 or 2: 1
+
+task 1 : android
+task 2 : python
+enter more important task 1 or 2: 2
+
+task 1 : aws
+task 2 : python
+enter more important task 1 or 2: 2
+
+[['python', 3], ['aws', 0], ['android', 2], ['malware_analysis', 1]]
+
+</pre>
+<pre>
+The result of my choices is the following order:
+1. Python
+2. Android
+3. Malware Analysis
+4. Amazon AWS Cloud
+</pre>
+
