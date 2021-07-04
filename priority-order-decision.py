@@ -132,7 +132,7 @@ def prioritize_tasklist(tasklist):
         while k >= 1:
             print('task 1 : ' + str(priotasklist[l-1][0]))
             print('task 2 : ' + str(priotasklist[k-1][0]))
-            num = int(input('enter more important task 1 or 2: '))
+            num = int(input('prefer task 1 or task 2: '))
             if (num == 1):
                 priotasklist[l-1][1] = priotasklist[l-1][1] + 1
                 if debug:
