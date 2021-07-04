@@ -11,7 +11,7 @@ prorityorder
 
 ### Usage Guide
 <pre>
-<b>usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE]</b>
+<b>usage: priorityorder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE] task1 task2 task3 ...</b>
 
 <b> optional arguments:</b>
 <b> -h, --help    show this help message and exit</b>
