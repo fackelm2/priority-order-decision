@@ -1,5 +1,6 @@
 # priority-order-decision
-## Python Program to order your tasks
+## command line tool to prioritize tasks (written in Python)
+A simple command line tool to prioritize a number of tasks by asking you which of two tasks you find more important 
 
 ### Donwload & Run
 
