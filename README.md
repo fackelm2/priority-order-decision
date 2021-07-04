@@ -36,7 +36,7 @@ optional arguments:
 
 
 ### Examples
-find out what you to learn first ..
+i want to learn python, amazon aws cloud, malware analysis and android stuff - but what i want to do first?
 <pre>
 priority-order-decision.py python aws android malware_analysis
 task 1 : malware_analysis
