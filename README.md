@@ -37,7 +37,7 @@ optional arguments:
 
 
 ### Examples
-I want to learn something about Python, Amazon AWS Cloud, Malware Analysis and Android - but with what i should begin?
+I want to learn something about Python, Amazon AWS Cloud, Malware Analysis and Android - but with what should i begin?
 <pre>
 priority-order-decision.py python aws android malware_analysis
 task 1 : malware_analysis
