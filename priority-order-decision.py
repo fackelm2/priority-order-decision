@@ -15,7 +15,7 @@ import logging as log
 
 # set time string to actual time for debug and verbose time information
 time_str = time.strftime("%Y%m%d-%H%M%S")
-priority_order_decision_version = 'Version 0.1 [2021-07-04]'
+priority_order_decision_version = 'Version 0.2 [2021-11-15]'
 
 
 def no_nl(s): return str(s).replace("\r", "").replace("\n", "")   # clean strings (delete carriage return)
@@ -80,7 +80,7 @@ def argument_parser():  # command line tool - parse commands
 
     # until now just a list of tasks OR (excluded or) a filename is implemented
     if args.input_file and args.mytask:
-        print("ERROR - Arguments allowed: <apk_name> OR a filename <-i FILE> (excluded OR)")
+        print("ERROR - Arguments allowed: filename <-i FILE> (excluded OR)")
         exit()
 
     return args
